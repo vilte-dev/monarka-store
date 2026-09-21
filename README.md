@@ -5,7 +5,7 @@ pedido por WhatsApp, más un panel de administración protegido para gestionar l
 
 **Stack:** React 18 · Vite 7 · React Router 7 · Supabase (base de datos, Auth y Storage) · Vercel
 
-Demo: https://monarka-store.vercel.app/
+Demo: https://monarka-store-ecru.vercel.app/
 
 ## Capturas
 
