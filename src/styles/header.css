@@ -1,0 +1,138 @@
+/* Header, buscador y navegación por categorías. */
+
+/* ---------- Header ---------- */
+.site-header {
+  background: var(--cream-soft);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.header-inner {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 18px 0;
+  gap: 16px;
+}
+
+.logo-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-self: center;
+}
+
+.logo-mark {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+}
+
+.logo-text .word {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+}
+
+.logo-text .tag {
+  font-size: 9px;
+  letter-spacing: 0.3em;
+  color: var(--charcoal-60);
+  margin-top: 4px;
+}
+
+.header-search {
+  justify-self: start;
+  width: 100%;
+  max-width: 380px;
+}
+
+.header-actions {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.icon-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Search */
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 11px 40px 11px 16px;
+  border: 1px solid var(--line-strong);
+  background: var(--cream);
+  font-size: 13px;
+  border-radius: var(--radius);
+  color: var(--ink);
+}
+
+.search-box input::placeholder {
+  color: var(--charcoal-60);
+}
+
+.search-box svg {
+  position: absolute;
+  right: 12px;
+  width: 16px;
+  height: 16px;
+  color: var(--charcoal-60);
+}
+
+/* Category nav */
+.category-nav {
+  background: var(--cream);
+  border-bottom: 1px solid var(--line);
+}
+
+.category-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  padding: 14px 0;
+  flex-wrap: wrap;
+}
+
+.category-nav button {
+  background: none;
+  border: none;
+  font-size: 12.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  padding: 4px 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.category-nav button.active,
+.category-nav button:hover {
+  color: var(--ink);
+  border-bottom-color: var(--brass);
+}

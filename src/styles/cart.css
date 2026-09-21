@@ -1,0 +1,257 @@
+/* Bolsa: botón del header con contador y panel lateral. */
+
+/* ---------- Botón del header ---------- */
+.bag-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  font-family: inherit;
+}
+
+.bag-icon {
+  position: relative;
+  display: inline-flex;
+}
+
+.bag-badge {
+  position: absolute;
+  top: -7px;
+  right: -10px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 8px;
+  background: var(--brass);
+  color: var(--cream-soft);
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+}
+
+/* ---------- Panel lateral ---------- */
+.cart-overlay {
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.cart-drawer {
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+  height: 100%;
+  max-height: 100%;
+  padding: 28px 24px 0;
+  overflow: hidden;
+  border-width: 0 0 0 1px;
+  animation: cart-slide-in 0.2s ease-out;
+}
+
+@keyframes cart-slide-in {
+  from {
+    transform: translateX(24px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.cart-title {
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  padding-right: 44px;
+  margin-bottom: 18px;
+}
+
+.cart-title-count {
+  margin-left: 8px;
+  color: var(--charcoal-60);
+  font-size: 15px;
+}
+
+.cart-empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 60px;
+  text-align: center;
+  color: var(--charcoal-60);
+}
+
+.cart-empty p {
+  margin: 0;
+}
+
+/* ---------- Líneas ---------- */
+.cart-lines {
+  flex: 1;
+  overflow-y: auto;
+  margin: 0 -24px;
+  padding: 0 24px;
+}
+
+.cart-line {
+  display: grid;
+  grid-template-columns: 72px 1fr auto;
+  gap: 14px;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+}
+
+.cart-line-img {
+  width: 72px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  background: var(--cream-deep);
+}
+
+.cart-line-name {
+  margin: 0 0 4px;
+  font-size: 13.5px;
+  color: var(--charcoal);
+}
+
+.cart-line-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin: 0 0 10px;
+  font-size: 12px;
+  color: var(--charcoal-60);
+}
+
+.cart-line-color {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cart-line-color .swatch {
+  width: 12px;
+  height: 12px;
+}
+
+.cart-line-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.qty {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--line-strong);
+}
+
+.qty button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: none;
+  font-size: 16px;
+  color: var(--ink);
+}
+
+.qty button:hover:not(:disabled) {
+  background: var(--cream-deep);
+}
+
+.qty button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.qty span {
+  min-width: 28px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.cart-line-price {
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+}
+
+.cart-line-remove {
+  align-self: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: none;
+  color: var(--charcoal-60);
+}
+
+.cart-line-remove svg {
+  width: 14px;
+  height: 14px;
+}
+
+.cart-line-remove:hover {
+  color: var(--danger);
+}
+
+/* ---------- Pie con total y pedido ---------- */
+.cart-footer {
+  padding: 18px 0 24px;
+  border-top: 1px solid var(--line-strong);
+  background: var(--cream-soft);
+}
+
+.cart-total {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.cart-total strong {
+  font-weight: 500;
+}
+
+.cart-note {
+  margin: 0 0 14px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--charcoal-60);
+}
+
+.cart-footer .btn-whatsapp {
+  width: 100%;
+  margin-top: 0;
+}
+
+.cart-clear {
+  display: block;
+  margin: 12px auto 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: var(--charcoal-60);
+}
+
+.cart-clear:hover {
+  color: var(--danger);
+}
+
+@media (max-width: 640px) {
+  .cart-drawer {
+    max-width: 100%;
+  }
+}

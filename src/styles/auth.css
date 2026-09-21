@@ -1,0 +1,46 @@
+/* Pantalla de login. */
+
+/* ---------- Auth / Login ---------- */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ink);
+  padding: 24px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--cream-soft);
+  border: 1px solid var(--line);
+  padding: 34px 30px;
+}
+
+.auth-card .logo-block {
+  justify-content: flex-start;
+}
+
+.auth-back-link {
+  display: inline-block;
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+  color: var(--charcoal-60);
+  margin-bottom: 20px;
+}
+
+.auth-back-link:hover {
+  color: var(--brass);
+}
+
+.auth-title {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.auth-subtitle {
+  font-size: 13px;
+  color: var(--charcoal-60);
+  margin: 0 0 20px;
+}

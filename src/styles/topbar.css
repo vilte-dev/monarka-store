@@ -1,0 +1,26 @@
+/* Barra superior del sitio. */
+
+/* ---------- Top bar ---------- */
+.topbar {
+  background: var(--ink);
+  color: var(--cream-soft);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.topbar .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.topbar-links {
+  display: flex;
+  gap: 18px;
+}
+
+.topbar-links a:hover {
+  color: var(--brass-soft);
+}

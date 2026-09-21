@@ -1,0 +1,33 @@
+/* Utilidades globales: .wrap, .eyebrow, .rule. */
+
+.wrap {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.eyebrow {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--charcoal-60);
+}
+
+.rule {
+  border: none;
+  border-top: 1px solid var(--line-strong);
+  margin: 10px 0;
+}
+
+.rule-thin {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--line-strong) 18%,
+    var(--line-strong) 82%,
+    transparent
+  );
+}

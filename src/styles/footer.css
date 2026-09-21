@@ -1,0 +1,127 @@
+/* Footer. */
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--ink);
+  color: rgba(246, 242, 234, 0.82);
+  padding-top: 56px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-col h4 {
+  color: var(--cream-soft);
+  font-size: 12.5px;
+  letter-spacing: 0.14em;
+  margin-bottom: 18px;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  font-size: 13.5px;
+}
+
+.footer-col ul li a:hover {
+  color: var(--brass-soft);
+}
+
+.footer-brand .logo-text .word {
+  color: var(--cream-soft);
+}
+
+.footer-brand p {
+  font-size: 13px;
+  max-width: 260px;
+  margin: 14px 0 20px;
+  color: rgba(246, 242, 234, 0.65);
+}
+
+.social-row {
+  display: flex;
+  gap: 12px;
+}
+
+.social-btn {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(246, 242, 234, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.social-btn:hover {
+  background: var(--brass);
+  border-color: var(--brass);
+}
+
+.social-btn svg {
+  width: 17px;
+  height: 17px;
+}
+
+.newsletter-row {
+  display: flex;
+  border: 1px solid rgba(246, 242, 234, 0.28);
+  max-width: 320px;
+}
+
+.newsletter-row input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 11px 12px;
+  color: var(--cream-soft);
+  font-size: 13px;
+}
+
+.newsletter-row button {
+  background: var(--brass);
+  border: none;
+  color: var(--ink);
+  padding: 0 16px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(246, 242, 234, 0.14);
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: rgba(246, 242, 234, 0.5);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  z-index: 50;
+}
+
+.whatsapp-float svg {
+  width: 28px;
+  height: 28px;
+  fill: #fff;
+}

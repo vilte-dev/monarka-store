@@ -1,0 +1,17 @@
+/* Punto de entrada de los estilos globales.
+   El ORDEN de los imports importa (cascada): no lo reordenes. */
+
+@import './tokens.css';
+@import './base.css';
+@import './utilities.css';
+@import './buttons.css';
+@import './topbar.css';
+@import './header.css';
+@import './hero.css';
+@import './catalog.css';
+@import './modals.css';
+@import './cart.css';
+@import './footer.css';
+@import './auth.css';
+@import './admin.css';
+@import './responsive.css';

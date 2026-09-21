@@ -1,0 +1,17 @@
+/* Design tokens: colores, radios y anchos (variables CSS). */
+
+:root {
+  --cream: #ece4d6;
+  --cream-soft: #f6f2ea;
+  --cream-deep: #e2d8c3;
+  --ink: #16140f;
+  --charcoal: #2b2820;
+  --charcoal-60: rgba(43, 40, 32, 0.62);
+  --line: rgba(22, 20, 15, 0.16);
+  --line-strong: rgba(22, 20, 15, 0.32);
+  --brass: #8f7443;
+  --brass-soft: #c7ac79;
+  --danger: #a13d2b;
+  --radius: 2px;
+  --max-w: 1240px;
+}

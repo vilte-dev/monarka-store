@@ -1,0 +1,51 @@
+/* Sección hero de la portada. */
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  min-height: 460px;
+  display: flex;
+  align-items: center;
+  background: var(--ink);
+  color: var(--cream-soft);
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.55;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, rgba(22, 20, 15, 0.92) 20%, rgba(22, 20, 15, 0.35) 75%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 560px;
+  padding: 60px 0;
+}
+
+.hero-content .eyebrow {
+  color: var(--brass-soft);
+}
+
+.hero-content h1 {
+  font-size: clamp(38px, 6vw, 64px);
+  line-height: 1.02;
+  letter-spacing: 0.01em;
+  margin: 14px 0 18px;
+}
+
+.hero-content p {
+  font-size: 15px;
+  color: rgba(246, 242, 234, 0.82);
+  max-width: 420px;
+  margin-bottom: 26px;
+}
